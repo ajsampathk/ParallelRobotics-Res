@@ -1,13 +1,13 @@
 import math
 
-F=200
-L1=800
-L2=1600
+F=10
+L1=20
+L2=40
 
 def fkine(Ltheta,Rtheta):
   
-  Pl = (L1*math.sin(math.radians(Ltheta))-F,L1*math.cos(math.radians(Ltheta)))
-  Pr = (L1*math.sin(math.radians(Rtheta))+F,L1*math.cos(math.radians(Rtheta)))
+  Pl = (L1*math.sin(math.radians(Ltheta))+F,L1*math.cos(math.radians(Ltheta)))
+  Pr = (L1*math.sin(math.radians(Rtheta))-F,L1*math.cos(math.radians(Rtheta)))
   #print("PL:{},PR:{}".format(Pl,Pr))
   lr = (L1*(math.sin(math.radians(Rtheta))-math.sin(math.radians(Ltheta)))+2*F)**2 + (L1*(math.cos(math.radians(Rtheta))-math.cos(math.radians(Ltheta))))**2
   lf = (L1*math.sin(math.radians(Ltheta)) - F)**2 + (L1*math.cos(math.radians(Ltheta)))**2
