@@ -27,9 +27,23 @@ For the ease of understanding initially we develop a 2 DOF Delta parallel robot
 
 + Considering Frame and Base to be a point
 
+Initially considering the 2-axis delta robot with frame and base length to be zero,let AB and AD be the upper links say L1, BC and DC 
+be the lower links say L2. According to the standard design of a delta robot we assume the length of links L1 and L2 to be in the ratio 
+of 1:2,hence L2 = 2(L1). We calculate the distance between the frame and base points using the basic trigonometric equations and 
+the concept of pythagoras theorem.
+
+
      Case 1: Both <img src="http://www.sciweavers.org/tex2img.php?eq=%20%5Ctheta%201&bc=White&fc=Black&im=png&fs=12&ff=arev&edit=0" align="center" border="0" alt=" \theta 1" width="25" height="15" /> and <img src="http://www.sciweavers.org/tex2img.php?eq=%20%5Ctheta%202&bc=White&fc=Black&im=png&fs=12&ff=arev&edit=0" align="center" border="0" alt=" \theta 2" width="25" height="15" /> are equal
 
-    
+    ![fig1](fig2.png)
+
+     From Δ ABC,
+
+     x = Sin(ϴ1)*L1
+     
+     y = Cos(ϴ1)*L1                                          -----------(eqn-1)
+
+
     
     
 
