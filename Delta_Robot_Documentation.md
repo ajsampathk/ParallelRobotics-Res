@@ -45,9 +45,9 @@ the concept of pythagoras theorem.
    
    From ΔBCE,	 	 	 	
    
-   L2^2= z2 + x2	 	 	 	
+   L2^2= z^2 + x^2	 	 	 	
    
-   z2  = L22  - x2
+   z^2  = L2^2  - x^2
    
    z   = √ (L2^2 - ( Sin^2(ϴ1))*L1^2)   -------------(eqn-2)
   
