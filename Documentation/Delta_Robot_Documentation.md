@@ -1,6 +1,6 @@
 # Parallel Robotics
 
-A Parallel Robot refers to a kinematic chain in which a fixed platform and moving platform are connected to each other by several Kinematic serial chains.
+A Parallel Robot refers to a kinematic chain in which a fixed platform and moving platform are connected to each other by several serial Kinematic chains.
 
 
 ## Delta Robot
@@ -9,7 +9,7 @@ Delta Robot is a type of Parallel Robot consisting of 3 identical Kinematics cha
 which restrict the movement of the base/end plate to pure translation( i.e. Only movement in X,Y or Z direction) 
 Delta Robots are known for it's high speed and high acceleration, Also having all the kinematic chains connected together to end-effector increases stiffness of the robot.
 
-In this project we have Designed a 3-DOF Delta Robot
+In this project we have Design a 3-DOF Delta Robot
 
 ## kinematic Analysis
 
@@ -39,23 +39,23 @@ the concept of pythagoras theorem.
 
    From Δ ABC,
 
-   x = Sin(ϴ1)*L1
+   <img src="https://bit.ly/2RDfPkT" align="center" border="0" alt="x= Sin( \theta 1) * L1" width="139" height="18" />
      
-   y = Cos(ϴ1)*L1                                          -----------(eqn-1)
+   <img src="http://www.sciweavers.org/tex2img.php?eq=y%20%3D%20Cos%28%20%5Ctheta%201%29%2AL1&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="y = Cos( \theta 1)*L1" width="144" height="19" />                                         -----------(eqn-1)
    
    From ΔBCE,	 	 	 	
    
-   L2^2= z^2 + x^2	 	 	 	
+   <img src="http://www.sciweavers.org/tex2img.php?eq=L_%7B2%7D%20%5E%7B2%7D%20%3D%20z%5E%7B2%7D%20%20%2B%20%20x%5E%7B2%7D%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="L_{2} ^{2} = z^{2}  +  x^{2} " width="100" height="25" />	 	 	
    
-   z^2  = L2^2  - x^2
+   <img src="http://www.sciweavers.org/tex2img.php?eq=z%5E%7B2%7D%20%3D%20L_%7B2%7D%20%5E%7B2%7D%20-%20%20x%5E%7B2%7D%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="z^{2} = L_{2} ^{2} -  x^{2} " width="100" height="25" />
    
-   z   = √ (L2^2 - ( Sin^2(ϴ1))*L1^2)   -------------(eqn-2)
+   <img src="http://www.sciweavers.org/tex2img.php?eq=z%3D%20%20%5Csqrt%5B%5D%7B%28L_%7B2%7D%5E%7B2%7D%20-%20%28%20Sin%5E%7B2%7D%28%20%5Ctheta_%7B1%7D%29%29%2AL1%5E%7B2%7D%29%7D%20%0A%0A%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="z=  \sqrt[]{(L_{2}^{2} - ( Sin^{2}( \theta_{1}))*L1^{2})}  " width="233" height="31" />-------------(eqn-2)
   
    From eqn-1 and eqn-2,
    
-   AC = y + z
+  <img src="http://www.sciweavers.org/tex2img.php?eq=AC%20%3D%20y%2Bz&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="AC = y+z" width="89" height="19" />
    
-   AC = Cos(ϴ1)*L1 + √(L2^2-(Sin2(ϴ1))*L1^2) )
+   <img src="http://www.sciweavers.org/tex2img.php?eq=AC%20%3D%20%5Csqrt%5B%5D%20%7BCos%28%20%5Ctheta_%7B1%7D%29%2AL_%7B1%7D%20%2B%20%E2%88%9A%28L_%7B2%7D%5E%7B2%7D-%28Sin%5E%7B2%7D%28%20%5Ctheta%20_%7B1%7D%29%29%2AL_%7B1%7D%5E%7B2%7D%29%20%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="AC = \sqrt[] {Cos( \theta_{1})*L_{1} + √(L_{2}^{2}-(Sin^{2}( \theta _{1}))*L_{1}^{2}) }" width="361" height="31" />
    
    Hence,the end-effector C(x,y) = C(0,AC)
 
