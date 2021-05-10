@@ -1,6 +1,6 @@
 # Parallel Robotics
 
-A Parallel Robot refers to a kinematic chain in which a fixed platform and moving platform are connected to each other by several Kinematic serial chains.
+A Parallel Robot refers to a kinematic chain in which a fixed platform and moving platform are connected to each other by several serial Kinematic chains.
 
 
 ## Delta Robot
@@ -9,7 +9,7 @@ Delta Robot is a type of Parallel Robot consisting of 3 identical Kinematics cha
 which restrict the movement of the base/end plate to pure translation( i.e. Only movement in X,Y or Z direction) 
 Delta Robots are known for it's high speed and high acceleration, Also having all the kinematic chains connected together to end-effector increases stiffness of the robot.
 
-In this project we have Designed a 3-DOF Delta Robot
+In this project we have Design a 3-DOF Delta Robot
 
 ## kinematic Analysis
 
