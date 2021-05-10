@@ -49,7 +49,7 @@ the concept of pythagoras theorem.
    
    <img src="http://www.sciweavers.org/tex2img.php?eq=z%5E%7B2%7D%20%3D%20L_%7B2%7D%20%5E%7B2%7D%20-%20%20x%5E%7B2%7D%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="z^{2} = L_{2} ^{2} -  x^{2} " width="100" height="25" />
    
-<img src="http://www.sciweavers.org/tex2img.php?eq=z%3D%20%20%5Csqrt%5B%5D%7B%28L_%7B2%7D%5E%7B2%7D%20-%20%28%20Sin%5E%7B2%7D%28%20%5Ctheta_%7B1%7D%29%29%2AL1%5E%7B2%7D%29%7D%20%0A%0A%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="z=  \sqrt[]{(L_{2}^{2} - ( Sin^{2}( \theta_{1}))*L1^{2})}  " width="233" height="31" />-------------(eqn-2)
+   <img src="http://www.sciweavers.org/tex2img.php?eq=z%3D%20%20%5Csqrt%5B%5D%7B%28L_%7B2%7D%5E%7B2%7D%20-%20%28%20Sin%5E%7B2%7D%28%20%5Ctheta_%7B1%7D%29%29%2AL1%5E%7B2%7D%29%7D%20%0A%0A%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="z=  \sqrt[]{(L_{2}^{2} - ( Sin^{2}( \theta_{1}))*L1^{2})}  " width="233" height="31" />-------------(eqn-2)
   
    From eqn-1 and eqn-2,
    
