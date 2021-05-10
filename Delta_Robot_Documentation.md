@@ -33,15 +33,15 @@ of 1:2,hence L2 = 2(L1). We calculate the distance between the frame and base po
 the concept of pythagoras theorem.
 
 
-     Case 1: Both <img src="http://www.sciweavers.org/tex2img.php?eq=%20%5Ctheta%201&bc=White&fc=Black&im=png&fs=12&ff=arev&edit=0" align="center" border="0" alt=" \theta 1" width="25" height="15" /> and <img src="http://www.sciweavers.org/tex2img.php?eq=%20%5Ctheta%202&bc=White&fc=Black&im=png&fs=12&ff=arev&edit=0" align="center" border="0" alt=" \theta 2" width="25" height="15" /> are equal
+   Case 1: Both <img src="http://www.sciweavers.org/tex2img.php?eq=%20%5Ctheta%201&bc=White&fc=Black&im=png&fs=12&ff=arev&edit=0" align="center" border="0" alt=" \theta 1" width="25" height="15" /> and <img src="http://www.sciweavers.org/tex2img.php?eq=%20%5Ctheta%202&bc=White&fc=Black&im=png&fs=12&ff=arev&edit=0" align="center" border="0" alt=" \theta 2" width="25" height="15" /> are equal
 
-    ![fig1](fig2.png)
+   ![fig1](fig2.png)
 
-     From Δ ABC,
+   From Δ ABC,
 
-     x = Sin(ϴ1)*L1
+   x = Sin(ϴ1)*L1
      
-     y = Cos(ϴ1)*L1                                          -----------(eqn-1)
+   y = Cos(ϴ1)*L1                                          -----------(eqn-1)
 
 
     
