@@ -35,7 +35,7 @@ the concept of pythagoras theorem.
 
    Case 1: Both <img src="http://www.sciweavers.org/tex2img.php?eq=%20%5Ctheta%201&bc=White&fc=Black&im=png&fs=12&ff=arev&edit=0" align="center" border="0" alt=" \theta 1" width="25" height="15" /> and <img src="http://www.sciweavers.org/tex2img.php?eq=%20%5Ctheta%202&bc=White&fc=Black&im=png&fs=12&ff=arev&edit=0" align="center" border="0" alt=" \theta 2" width="25" height="15" /> are equal
 
-   ![fig1](fig2.png)
+   ![fig1](imgs/fig2.png)
 
    From Δ ABC,
 
