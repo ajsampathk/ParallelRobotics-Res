@@ -57,6 +57,7 @@ the concept of pythagoras theorem.
    
    <img src="https://bit.ly/2RAxr0C" align="center" border="0" alt="AC = \sqrt[] {Cos( \theta_{1})*L_{1} + √(L_{2}^{2}-(Sin^{2}( \theta _{1}))*L_{1}^{2}) }" width="361" height="31" />
    
+   
    Hence,the end-effector C(x,y) = C(0,AC)
 
 
