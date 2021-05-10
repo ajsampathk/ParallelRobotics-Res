@@ -23,9 +23,9 @@ Inverse kinematics is the mathematical process of calculating the variable joint
 
 For the ease of understanding initially we develop a 2 DOF Delta parallel robot
 
-#####  1. Kinematics of 2-DOF Delta robot
+##  1. Kinematics of 2-DOF Delta robot
 
-    + Considering Frame and Base to be a point
++ Considering Frame and Base to be a point
     
     
     
