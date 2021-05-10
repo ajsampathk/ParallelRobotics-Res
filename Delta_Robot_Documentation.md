@@ -55,7 +55,7 @@ the concept of pythagoras theorem.
    
    AC = y + z
    
-   AC = Cos(ϴ1)*L1 + √(L2^2-(Sin2(ϴ1))*L1^2) )
+   AC = Cos(ϴ1)*L1 + √(L2^2-(Sin^2(ϴ1))*L1^2) )
    
    Hence,the end-effector C(x,y) = C(0,AC)
 
