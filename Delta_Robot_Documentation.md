@@ -27,7 +27,7 @@ For the ease of understanding initially we develop a 2 DOF Delta parallel robot
 
 + Considering Frame and Base to be a point
 
-$\theta$
+     Case 1: Both <img src="http://www.sciweavers.org/tex2img.php?eq=%20%5Ctheta%201&bc=White&fc=Black&im=png&fs=12&ff=arev&edit=0" align="center" border="0" alt=" \theta 1" width="25" height="15" /> and <img src="http://www.sciweavers.org/tex2img.php?eq=%20%5Ctheta%202&bc=White&fc=Black&im=png&fs=12&ff=arev&edit=0" align="center" border="0" alt=" \theta 2" width="25" height="15" /> are equal
 
     
     
