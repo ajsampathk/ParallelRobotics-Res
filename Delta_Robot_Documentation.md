@@ -25,6 +25,8 @@ For the ease of understanding initially we develop a 2 DOF Delta parallel robot
 1. Kinematics of 2-DOF Delta robot
 
     + Considering Frame and Base to be a point
+
+    
     ![Fig.1](fig1.png)
     
 
