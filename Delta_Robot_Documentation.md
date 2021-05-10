@@ -13,10 +13,19 @@ In this project we have Designed a 3-DOF Delta Robot
 
 ## kinematic Analysis
 
++  Forward Kinematics
+Forward kinematics refers to the use of the kinematic equations of a robot to compute the position of the end-effector from specified values for the joint parameters.
+
++  Inverse kinematics
+Inverse kinematics is the mathematical process of calculating the variable joint parameters needed to place the end of a kinematic chain, when the end-effector position is given
+
+
 For the ease of understanding initially we develop a 2 DOF Delta parallel robot
 
 1. Kinematics of 2-DOF Delta robot
 
     + Considering Frame and Base to be a point
+    ![Fig.1](fig1.png)
+    
 
 
