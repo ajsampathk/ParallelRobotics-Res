@@ -42,6 +42,23 @@ the concept of pythagoras theorem.
    x = Sin(ϴ1)*L1
      
    y = Cos(ϴ1)*L1                                          -----------(eqn-1)
+   
+   From ΔBCE,	 	 	 	
+   
+   L2^2= z2 + x2	 	 	 	
+   
+   z2  = L22  - x2
+   
+   z   = √ (L2^2 - ( Sin^2(ϴ1))*L1^2)   -------------(eqn-2)
+  
+   From eqn-1 and eqn-2,
+   
+   AC = y + z
+   
+   AC = Cos(ϴ1)*L1 + √(L2^2-(Sin2(ϴ1))*L1^2) )
+   
+   Hence,the end-effector C(x,y) = C(0,AC)
+
 
 
     
