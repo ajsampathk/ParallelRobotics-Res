@@ -27,6 +27,8 @@ For the ease of understanding initially we develop a 2 DOF Delta parallel robot
 
 + Considering Frame and Base to be a point
 
+\theta
+
     
     
     
