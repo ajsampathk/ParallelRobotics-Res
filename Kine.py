@@ -1,58 +1,45 @@
 import math
+from math import pi,cos,sin,radians
+import numpy as np
 
 F=10
 L1=20
 L2=40
 
-def fkine(Ltheta,Rtheta):
-  
-  Pl = (L1*math.sin(math.radians(Ltheta))+F,L1*math.cos(math.radians(Ltheta)))
-  Pr = (L1*math.sin(math.radians(Rtheta))-F,L1*math.cos(math.radians(Rtheta)))
-  #print("PL:{},PR:{}".format(Pl,Pr))
-  lr = (L1*(math.sin(math.radians(Rtheta))-math.sin(math.radians(Ltheta)))+2*F)**2 + (L1*(math.cos(math.radians(Rtheta))-math.cos(math.radians(Ltheta))))**2
-  lf = (L1*math.sin(math.radians(Ltheta)) - F)**2 + (L1*math.cos(math.radians(Ltheta)))**2
-  rf = (L1*math.sin(math.radians(Rtheta)) + F)**2 + (L1*math.cos(math.radians(Rtheta)))**2
-  Dlr = math.sqrt(lr)
-  Dlf = math.sqrt(lf)
-  Drf = math.sqrt(rf)
-  
-  thetaA = math.acos((Dlr**2)/(2*Dlr*L2))
-  thetaB = math.acos((Dlf**2 + Dlr**2 - Drf**2)/(2*Dlf*Dlr))
-  
-  Dfe = math.sqrt(Dlf**2 + L2**2 - 2*Dlf*L2*math.cos(thetaA+thetaB))
-  print("Dist_FE: {}".format(Dfe))
-  thetaC = math.acos((Dfe**2+Dlf**2-L2**2)/(2*Dfe*Dlf))
-  thetaD = math.acos((Dlf**2+F**2-L1**2)/(2*F*Dlf))
-  
-  thetaEff = (thetaC+thetaD-(math.pi/2))/2
-  print("Ang_FE: {}".format(math.degrees(thetaEff)))
-  X = Dfe*math.sin(thetaEff)
-  Y = Dfe*math.cos(thetaEff)
-  print("FK-(x,y):{}".format((X,Y)))
-  return (X,Y)
+def Fkine(Ltheta,Rtheta):
+  Pl = (-F-L1*cos(pi+radians(Ltheta)),L1*sin(radians(Ltheta)))
+  Pr = (F+L1*cos(pi+radians(Rtheta)),L1*sin(radians(Rtheta)))
+  Pl=np.array(Pl)
+  Pr=np.array(Pr)
+  print("\tP(L) = {}\n\tP(R) = {}".format(Pl,Pr))
+  diff = Pl-Pr
+  d = math.sqrt(np.sum(diff**2))
+  theta  = math.atan(diff[1]/diff[0])
+  phi = math.acos(d/(2*L2))
+  print("\td = {}\n\tTheta = {}\n\tPhi = {}".format(d,theta,phi))
 
-def ikine(x,y):
-  Xl = (x + F)**2 +(y**2)
-  Xl = math.sqrt(Xl)
-  Xr = (x - F)**2 +(y**2)
-  Xr = math.sqrt(Xr)
-  print("Xl:{},Xr:{}".format(Xl,Xr))
-  R=[]
-  R.append((F**2+Xl**2 - Xr**2)/(2*Xl*F))
-  R.append((F**2+Xr**2 - Xl**2)/(2*Xr*F))
-  R.append((L1**2+Xl**2 - L2**2)/(2*L1*Xl))
-  R.append((L1**2+Xr**2 - L2**2)/(2*Xr*L1))
-  
-  theta = [math.acos(r) for r in R]
-#  print("Theta:{}".format(theta))
-  Ltheta = theta[0]+theta[2]
-  Rtheta = theta[1]+theta[3]
-  print("L-Theta:{},R-Theta:{}".format(90-math.degrees(Ltheta),math.degrees(Rtheta)-90))
-  return (90-math.degrees(Ltheta),math.degrees(Rtheta)-90)
+  Pd = [L2*cos(phi-theta),L2*sin(phi-theta)]
+  Pd = np.array(Pd)
+  Pe = Pl+Pd
+
+  print("\t(X,Y) = {}".format(np.round(Pe,2)))
+  return(Pe)
+
+def Ikine(Pe):
+  Ol = np.array([-F,0])
+  Or = np.array([F,0])
+  dl = math.sqrt(np.sum((Pe-Ol)**2))
+  dr = math.sqrt(np.sum((Pe-Or)**2))
+  print("\tD(L) = {}\n\tD(R) = {}".format(dl,dr))
+  thetaL = math.acos((F+Pe[0])/dl)
+  thetaR = math.acos((F-Pe[0])/dr)
+  phiL = math.acos((L1**2+dl**2-L2**2)/(2*dl*L1))
+  phiR = math.acos((L1**2+dr**2-L2**2)/(2*dr*L1))
+  Ltheta = math.degrees(thetaL+phiL)
+  Rtheta = math.degrees(thetaR+phiR)
+  print("\tTh(L,R) = {}\n\tPhi(L,R) = {}\n\tTheta(L,R) = {}".format((thetaL,thetaR),(phiL,phiR),(Ltheta,Rtheta)))
 
 if __name__=='__main__':
-  (x,y) = input("x,y: ")
-  (L,R) = ikine(x,y)
-  print("-----\nIK-{}\n-----".format((L,R)))
-  cart=fkine(L,R)
-  print("-----\nFK-{}\n-----".format(cart))
+  (L,R) = input("Ltheta,Rtheta(deg):")
+  Pe = Fkine(L,R)
+  Ikine(Pe)
