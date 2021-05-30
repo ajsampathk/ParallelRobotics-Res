@@ -24,8 +24,14 @@ F = frame length, L1 = length of link1, L2 = length of link2.
 
 6.	Fix the error by choosing appropriate data file present inside the same folder.
 
+![Step6](https://user-images.githubusercontent.com/61639084/120103610-118dc880-c16e-11eb-8fc3-49dcac42f8df.png)
+
+![Step7](https://user-images.githubusercontent.com/61639084/120103615-1d798a80-c16e-11eb-9e80-e582cf85a545.png)
+
+![Step8](https://user-images.githubusercontent.com/61639084/120103650-4d289280-c16e-11eb-8e60-8c2edb96b325.png)
 
 7. Once the error is fixed the model should look something like this without any blocks highlighted in red.
- 
+
+![Step9](https://user-images.githubusercontent.com/61639084/120103662-59aceb00-c16e-11eb-892e-c49c63156a2d.png)
 
 8. Run the simulation and feel free to play with the input values for different joint angles and profiles.
