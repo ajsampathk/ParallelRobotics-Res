@@ -1,9 +1,12 @@
-#ReadMe: To launch the Simulink template files
 Reference variables used for input parameters:
-F = frame length
-L1 = length of link1
+
+F = frame length.
+
+L1 = length of link1.
+
 L2 = length of link2.
 
+To launch the Simulink template files.
 
 1.	Download and clone the template (.sltx ) file in a new folder.
 2.	Create a new project and save the template file in it.
