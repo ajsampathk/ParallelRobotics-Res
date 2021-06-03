@@ -5,7 +5,8 @@ Parallel Robotics- Documentation
 - [Delta Robots](#delta-robots)
 - [Kinematic Analysis](#kinematic-analysis)
 	 - [Kinematics of 2-DOF Delta robot](#1-kinematics-of-2-dof-delta-robot)
-       - [Considering Frame and Base to be a point](#considering-frame-and-base-to-be-a-point)
+        - [Considering Frame and Base to be a point](#considering-frame-and-base-to-be-a-point)
+       
 
 ## Parallel Robots
 A Parallel Robot refers to a kinematic chain in which a fixed platform and moving platform are connected to each other by several serial Kinematic chains.
@@ -37,29 +38,42 @@ the concept of pythagoras theorem.
 
 ###### Forward Kinematics:
 
-Case 1: If both ϴ1 and ϴ2 are equal. i.e C(x,y) = (0,y)
+****Case 1: If both ϴ1 and ϴ2 are equal. i.e C(x,y) = (0,y)****
 
 ![image1](https://user-images.githubusercontent.com/61882073/119257251-08d34a80-bbe2-11eb-862f-9eff98175196.png)
 
  From Δ ABC,
 
-   <img src="https://bit.ly/2RDfPkT" align="center" border="0" alt="x= Sin( \theta 1) * L1" width="139" height="18" />
-     
-   <img src="https://bit.ly/2Q38CtM" align="center" border="0" alt="y = Cos( \theta 1)*L1" width="144" height="19" />                                         -----------(eqn-1)
+   ![image](https://user-images.githubusercontent.com/61882073/120584208-26f44280-c44d-11eb-800f-44d6819a4aac.png)                                         -----------(eqn-1)
    
    From ΔBCE,	 	 	 	
    
-   <img src="https://bit.ly/3uyQ4Rd" align="center" border="0" alt="L_{2} ^{2} = z^{2}  +  x^{2}" width="100" height="25" />	 	 	
-   
-   <img src="https://bit.ly/33uEQBf" align="center" border="0" alt="z^{2} = L_{2} ^{2} -  x^{2} " width="100" height="25" />
-   
-   <img src="https://bit.ly/3o3pywH" align="center" border="0" alt="z=  \sqrt[]{(L_{2}^{2} - ( Sin^{2}( \theta_{1}))*L1^{2})} " width="233" height="31" />-------------(eqn-2)
-  
+   ![image](https://user-images.githubusercontent.com/61882073/120584645-fbbe2300-c44d-11eb-8ea3-f0a52d7de9c3.png)					   -----------(eqn-2)
+
+
    From eqn-1 and eqn-2,
    
-  <img src="http://www.sciweavers.org/tex2img.php?eq=AC%20%3D%20y%2Bz&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="AC = y+z" width="89" height="19" />
-   
-   <img src="https://bit.ly/2RAxr0C" align="center" border="0" alt="AC = \sqrt[] {Cos( \theta_{1})*L_{1} + √(L_{2}^{2}-(Sin^{2}( \theta _{1}))*L_{1}^{2}) }" width="361" height="31" />
+  ![image](https://user-images.githubusercontent.com/61882073/120585043-afbfae00-c44e-11eb-84e2-28a866ce7ebe.png)
    
    
-   Hence,the end-effector C(x,y) = C(0,AC)
+   Hence,the position of end-effector C(x,y) = C(0,AC)
+  
+  
+  
+ 
+ 
+****Case 2: If both ϴ1 and ϴ2 are not equal. i.e C(x,y) = (x,y)****
+
+![image](https://user-images.githubusercontent.com/61882073/120587592-41311f00-c453-11eb-9936-fe5ee75194eb.png)
+
+When the two input angles are not equal the point C of the end effector traverses along the plane in x-direction and the imbalance is noted as ϴeffective. ϴeffective is calculated and the resulting end-effector position is known as follows,
+
+Similar to Case 1,
+
+![image](https://user-images.githubusercontent.com/61882073/120588499-ed273a00-c454-11eb-9c7a-cd2ed2f26c7d.png)
+![image](https://user-images.githubusercontent.com/61882073/120588568-08924500-c455-11eb-9606-2c9d96f48837.png)
+
+Hence the Coordinates of the End-effector C(x,y)=C(Xe,Ye)
+
+
+###### Inverse Kinematics:
