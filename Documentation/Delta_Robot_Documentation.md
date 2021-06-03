@@ -71,6 +71,7 @@ When the two input angles are not equal the point C of the end effector traverse
 Similar to Case 1,
 
 ![image](https://user-images.githubusercontent.com/61882073/120588499-ed273a00-c454-11eb-9c7a-cd2ed2f26c7d.png)
+
 ![image](https://user-images.githubusercontent.com/61882073/120588568-08924500-c455-11eb-9606-2c9d96f48837.png)
 
 Hence the Coordinates of the End-effector C(x,y)=C(Xe,Ye)
