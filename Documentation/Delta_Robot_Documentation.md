@@ -31,11 +31,13 @@ For the ease of understanding initially we develop a 2 DOF Delta parallel robot
 
 ### 1 Kinematics of 2-DOF Delta robot
 
+
 ##### Considering Frame and Base to be a point
 Initially considering the 2-axis delta robot with frame and base length to be zero,let AB and AD be the upper links say L1, BC and DC 
 be the lower links say L2. According to the standard design of a delta robot we assume the length of links L1 and L2 to be in the ratio 
 of 1:2,hence L2 = 2(L1). We calculate the distance between the frame and base points using the basic trigonometric equations and 
 the concept of pythagoras theorem.
+
 
 ###### Forward Kinematics:
 
@@ -78,6 +80,7 @@ Similar to Case 1,
 Hence the Coordinates of the End-effector C(x,y)=C(Xe,Ye)
 
 
+
 ###### Inverse Kinematics:
 
 Let C(x,y) be the given parameters, then the end-effector values can be represented in cartesian form as
@@ -101,8 +104,11 @@ Using Cosine Rule,
 Hence we obtain the resulting joint angles ϴ1,ϴ2.
 
 
+
 ##### Considering Frame to be of some unit (2f) and Base to be a point
 Consider the frame length to be 2f and base length to be Zero.. Let AB and ED be the upper links, say L1, BC and DC be the lower links, say L2. According to the standard design of a delta robot we assume the length of links L1 and L2 to be in the ratio of 1:2,hence L2 = 2(L1). We calculate the distance between the frame and base points using the basic trigonometric equations and the concept of pythagoras theorem.
+
+
 
 ###### Forward Kinematics:
 
@@ -129,6 +135,8 @@ AC = y + z
 ![image](https://user-images.githubusercontent.com/61882073/120757242-ea4c4800-c52d-11eb-97e4-844935446721.png)
 Hence,the end-effector position C(x,y) = C(0,AC)
 
+
+
 ****Case 2: If both ϴ1 and ϴ2 are not equal. i.e C(x,y) = (x,y)****
 When the two input angles are not equal the point C of the end effector traverses along the plane in x-direction and the imbalance is noted as ϴeffective. The below diagram represents the situation where in ϴeffective is calculated and the resulting end-effector position is known as follows,
 
@@ -154,6 +162,8 @@ Using Cosine Rule,
 ![image](https://user-images.githubusercontent.com/61882073/120761336-b6275600-c532-11eb-995d-7bf08f827fca.png)
 
 Hence we obtain the value of end effector position C(X,Y)=(x,y) and ϴ effective.
+
+
 
 ###### Inverse Kinematics:
 
