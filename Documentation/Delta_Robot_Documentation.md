@@ -169,13 +169,16 @@ Hence we obtain the value of end effector position C(X,Y)=(x,y) and ϴ effective
 
 #### Inverse Kinematics:
 In inverse Kinematics we find the values of joint angles(in this case ϴL and ϴR) given the coordinates of the end-effector.
+
 INPUT: L1, L2, C(X,Y)
+
 OUTPUT: ϴL, ϴR
+
 ASSUMPTION: F->Origin, A->(-f,0), E->(+f,0) 
 
 ![image](https://user-images.githubusercontent.com/61882073/120761427-cc351680-c532-11eb-8cc7-e8024d63c091.png)
 
-UsE distance formula to find distances AC, EC and FC
+Use distance formula to find distances AC, EC and FC
 
 ![image](https://user-images.githubusercontent.com/61882073/120761512-e5d65e00-c532-11eb-8f60-ee988a321bcb.png)
 
