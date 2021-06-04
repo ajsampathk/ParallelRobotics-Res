@@ -9,6 +9,8 @@ Parallel Robotics- Documentation
        - [Considering Frame to be of some unit (2f) and Base to be a point](#considering-frame-to-be-of-some-unit-and-base-to-be-a-point)
       
 
+
+
 ## Parallel Robots
 A Parallel Robot refers to a kinematic chain in which a fixed platform and moving platform are connected to each other by several serial Kinematic chains.
 
@@ -39,7 +41,7 @@ of 1:2,hence L2 = 2(L1). We calculate the distance between the frame and base po
 the concept of pythagoras theorem.
 
 
-###### Forward Kinematics:
+#### Forward Kinematics:
 
 ****Case 1: If both ϴ1 and ϴ2 are equal. i.e C(x,y) = (0,y)****
 
@@ -81,7 +83,7 @@ Hence the Coordinates of the End-effector C(x,y)=C(Xe,Ye)
 
 
 
-###### Inverse Kinematics:
+#### Inverse Kinematics:
 
 Let C(x,y) be the given parameters, then the end-effector values can be represented in cartesian form as
 
@@ -110,7 +112,7 @@ Consider the frame length to be 2f and base length to be Zero.. Let AB and ED be
 
 
 
-###### Forward Kinematics:
+#### Forward Kinematics:
 
 ****Case 1: If both ϴ1 and ϴ2 are equal. i.e C(x,y) = (0,y)****
 
@@ -165,7 +167,7 @@ Hence we obtain the value of end effector position C(X,Y)=(x,y) and ϴ effective
 
 
 
-###### Inverse Kinematics:
+#### Inverse Kinematics:
 
 ![image](https://user-images.githubusercontent.com/61882073/120761427-cc351680-c532-11eb-8cc7-e8024d63c091.png)
 
