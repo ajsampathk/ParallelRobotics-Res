@@ -170,11 +170,28 @@ Hence we obtain the value of end effector position C(X,Y)=(x,y) and ϴ effective
 #### Inverse Kinematics:
 In inverse Kinematics we find the values of joint angles(in this case ϴL and ϴR) given the coordinates of the end-effector.
 
-INPUT: L1, L2, C(X,Y)
+PSEUDOCODE:
 
-OUTPUT: ϴL, ϴR
+      initialize A <- (-f,0)
+      initialize B <- (+f,0)
+      initialize C <- (0,0)
 
-ASSUMPTION: F->Origin, A->(-f,0), E->(+f,0) 
+      Input : L1, L2, C(X,Y)
+                
+		d1 <- sqrt((x+f)^2+y^2)
+	      	d2 <- sqrt((x-f)^2+y^2)
+	      	d  <- sqrt(x^2+y^2)
+		ϴ1  <-  cos^-1((L1^2+d1^2+L2^2)/(2*L1*d1)
+		ϴ2  <-  cos^-1((L1^2+d2^2-L2^2)/(2*L1*d2)
+	        ϴe1 <-  cos^-1((f^2+d1^2-d^2)/(2*f*d1)
+		ϴe2 <-  cos^-1((f^2+d2^2-d^2)/(2*f*d2)
+		
+		 ϴL <- ϴ1 + ϴe1
+		 ϴR <- ϴ2 + ϴe2
+		 
+		 return ϴL, ϴR
+	      
+
 
 ![image](https://user-images.githubusercontent.com/61882073/120761427-cc351680-c532-11eb-8cc7-e8024d63c091.png)
 
