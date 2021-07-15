@@ -19,7 +19,7 @@ Delta Robot is a type of Parallel Robot consisting of 3 identical Kinematics cha
 which restrict the movement of the base/end plate to pure translation( i.e. Only movement in X,Y or Z direction) 
 Delta Robots are known for it's high speed and high acceleration, Also having all the kinematic chains connected together to end-effector increases stiffness of the robot.
 
-In this project we have Design a 3-DOF Delta Robot
+In this project we have designed a 3-DOF Delta Robot
 
 ## kinematic Analysis
 
